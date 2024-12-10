@@ -10,6 +10,3 @@ print("Categorical Data:", categorical_data)
 # Cardinal Data
 cardinal_data = ['12345', '67890', '54321']
 print("Cardinal Data:", cardinal_data)
-
-
-
