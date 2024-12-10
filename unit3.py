@@ -18,11 +18,6 @@ print("Element at index 2:", data[2])  # Accessing the 3rd element
 #  Slicing in Pandas Series
 print("Sliced Series (index 1 to 3):\n", data[1:4])  # Elements from index 1 to 3
 
-#  Creating a DataFrame
-df = pd.DataFrame({'Name': ['Alice', 'Bob', 'Charlie'],
-                   'Age': [25, 30, 35],
-                   'Salary': [50000, 60000, 70000]})
-
 # Creating a Series
 series = pd.Series([10, 20, 30, 40])
 print("\nSeries:\n", series)
