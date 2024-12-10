@@ -36,12 +36,3 @@ matrix2 = np.array([[5, 6], [7, 8]])
 print("\nMatrix Addition:\n", matrix1 + matrix2)
 print("Matrix Multiplication:\n", np.dot(matrix1, matrix2))
 
-# Data Processing Using Arrays
-data_array = np.array([1, 2, 3, 4, 5])
-processed_data = data_array * 2  # Scaling the data
-print("\nProcessed Data:", processed_data)
-
-# File Handling Using NumPy
-np.savetxt("array_data.csv", data_array, delimiter=",")
-loaded_data = np.loadtxt("array_data.csv", delimiter=",")
-print("Loaded Data from File:", loaded_data)

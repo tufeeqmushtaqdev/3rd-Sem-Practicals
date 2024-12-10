@@ -1,6 +1,28 @@
 # Installation and Import
 import pandas as pd
 
+#  Creating a Pandas Series
+data = pd.Series([10, 20, 30, 40, 50])
+
+#  Appending to a Pandas Series
+new_data = data.append(pd.Series([60, 70]), ignore_index=True)
+print("Appended Series:\n", new_data)
+
+#  Sorting a Pandas Series
+sorted_series = new_data.sort_values()
+print("Sorted Series:\n", sorted_series)
+
+#  Indexing in Pandas Series
+print("Element at index 2:", data[2])  # Accessing the 3rd element
+
+#  Slicing in Pandas Series
+print("Sliced Series (index 1 to 3):\n", data[1:4])  # Elements from index 1 to 3
+
+#  Creating a DataFrame
+df = pd.DataFrame({'Name': ['Alice', 'Bob', 'Charlie'],
+                   'Age': [25, 30, 35],
+                   'Salary': [50000, 60000, 70000]})
+
 # Creating a Series
 series = pd.Series([10, 20, 30, 40])
 print("\nSeries:\n", series)
